@@ -171,7 +171,11 @@ var startTime = 0;
 
     // ButtonBがクリックされた時の処理
     function btnBClick(e){
-    
+    if active = true{
+      var currentTime = new Date();
+      var time = (currentTime - startTime)/1000;
+      $("#time").html("経過時間: "parseInt(time));
+    }
     }
 
     // ButtonCがクリックされた時の処理
